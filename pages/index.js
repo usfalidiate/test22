@@ -135,24 +135,24 @@ const allAvailable =()=>{
     <table className='tableNude'>
     <tbody>
     <tr>
-      <th className='thNudeSlim'></th>
-      <th className='thNudeSlim'></th>
+      <th className='thNude'></th>
+      <th className='thNude'></th>
       <th className ='thNude'><button onClick={()=>setUnlock(prev=>{return {...prev, meeksUnlock: !unlock.meeksUnlock};})} className={ unlock.meeksUnlock ? 'myButtonUnlocked' : 'myButtonLocked' }> { unlock.meeksUnlock ? 'Locked' : 'Unlocked'} </button></th>
       <th className ='thNude'><button onClick={()=>setUnlock(prev=>{return {...prev, theunsUnlock: !unlock.theunsUnlock}})} className={ unlock.theunsUnlock ? 'myButtonUnlocked' : 'myButtonLocked' }> { unlock.theunsUnlock ? 'Locked' : 'Unlocked'} </button></th>
       <th className ='thNude'><button onClick={()=>setUnlock(prev=>{return {...prev, nathanUnlock: !unlock.nathanUnlock}})} className={ unlock.nathanUnlock ? 'myButtonUnlocked' : 'myButtonLocked' }> { unlock.nathanUnlock ? 'Locked' : 'Unlocked'} </button></th>
       <th className ='thNude'><button onClick={()=>setUnlock(prev=>{return {...prev, troyUnlock: !unlock.troyUnlock}})} className={ unlock.troyUnlock ? 'myButtonUnlocked' : 'myButtonLocked' }> { unlock.troyUnlock ? 'Locked' : 'Unlocked'} </button></th>
     </tr> 
     <tr>
-      <th className='thNudeSlim'></th>
-      <th className='thNudeSlim'></th>
+      <th className='thNude'></th>
+      <th className='thNude'></th>
       <th className='thNude'><button disabled={unlock.meeksUnlock} className='myButtonSetAllAvail' onClick={setAllAvailMeeks}>Set All Avail<br></br> Meeks</button></th>
       <th className='thNude'><button disabled={unlock.theunsUnlock} className='myButtonSetAllAvail' onClick={setAllAvailTheuns}>Set All Avail <br></br> Theuns</button></th>
       <th className='thNude'><button disabled={unlock.nathanUnlock} className='myButtonSetAllAvail' onClick={setAllAvailNathan}>Set All Avail <br></br> Nathan</button></th>
       <th className='thNude'><button disabled={unlock.troyUnlock} className='myButtonSetAllAvail' onClick={setAllAvailTroy}>Set All Avail <br></br>Troy</button></th> 
     </tr>
     <tr>
-      <th className='thNudeSlim'></th>
-      <th className='thNudeSlim'></th>
+      <th className='thNude'></th>
+      <th className='thNude'></th>
       <th className='thNude'><button disabled={unlock.meeksUnlock} className='myButtonSetAllUnavail' onClick={setAllUnavailMeeks}>Set All Unavail <br></br> Meeks</button></th>
       <th className='thNude'><button disabled={unlock.theunsUnlock} className='myButtonSetAllUnavail' onClick={setAllUnavailTheuns}>Set All Unavail<br></br> Theuns</button></th>
       <th className='thNude'><button disabled={unlock.nathanUnlock} className='myButtonSetAllUnavail' onClick={setAllUnavailNathan}>Set All Unavail <br></br> Nathan</button></th>
