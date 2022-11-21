@@ -215,6 +215,7 @@ height: 80px;
 
 h1{
   text-align: center;
+  background: none;
 }
 
 html,
@@ -229,7 +230,7 @@ body {
 
 p {
   font-size: 10px;
-  color: black;
+  background: none;
 }
 
 a {
