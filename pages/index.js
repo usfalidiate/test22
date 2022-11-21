@@ -164,12 +164,12 @@ const allAvailable =()=>{
     <table className='tableDefault'>
     <tbody>
     <tr>
-      <th scope="colDate">Date</th>
-      <th scope="colDay">Day</th>
-      <th scope="col">Meeks</th>
-      <th scope="col">Theuns</th>
-      <th scope="col">Nathan</th>
-      <th scope="col">Troy</th>
+      <th scope="topRow">Date</th>
+      <th scope="topRow">Day</th>
+      <th scope="topRow">Meeks</th>
+      <th scope="topRow">Theuns</th>
+      <th scope="topRow">Nathan</th>
+      <th scope="topRow">Troy</th>
     </tr>
     <tr>
       <th scope="colDate">Nov 28</th>

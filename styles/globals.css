@@ -52,6 +52,13 @@ th[scope="colDay"] {
   height: 120px;
 }
 
+th[scope="topRow"] {
+  background-color: #696969;
+  color: rgb(37, 32, 32);
+  width: 120px;
+  height: 60px;
+  font-size: 16px;
+}
 
 
 th[scope="row"] {
