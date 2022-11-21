@@ -135,24 +135,24 @@ const allAvailable =()=>{
     <table className='tableNude'>
     <tbody>
     <tr>
-      <th className='thNude'></th>
-      <th className='thNude'></th>
+      <th className='thNudeSlim'></th>
+      <th className='thNudeSlim'></th>
       <th className ='thNude'><button onClick={()=>setUnlock(prev=>{return {...prev, meeksUnlock: !unlock.meeksUnlock};})} className={ unlock.meeksUnlock ? 'myButtonUnlocked' : 'myButtonLocked' }> { unlock.meeksUnlock ? 'Locked' : 'Unlocked'} </button></th>
       <th className ='thNude'><button onClick={()=>setUnlock(prev=>{return {...prev, theunsUnlock: !unlock.theunsUnlock}})} className={ unlock.theunsUnlock ? 'myButtonUnlocked' : 'myButtonLocked' }> { unlock.theunsUnlock ? 'Locked' : 'Unlocked'} </button></th>
       <th className ='thNude'><button onClick={()=>setUnlock(prev=>{return {...prev, nathanUnlock: !unlock.nathanUnlock}})} className={ unlock.nathanUnlock ? 'myButtonUnlocked' : 'myButtonLocked' }> { unlock.nathanUnlock ? 'Locked' : 'Unlocked'} </button></th>
       <th className ='thNude'><button onClick={()=>setUnlock(prev=>{return {...prev, troyUnlock: !unlock.troyUnlock}})} className={ unlock.troyUnlock ? 'myButtonUnlocked' : 'myButtonLocked' }> { unlock.troyUnlock ? 'Locked' : 'Unlocked'} </button></th>
     </tr> 
     <tr>
-      <th className='thNude'></th>
-      <th className='thNude'></th>
+      <th className='thNudeSlim'></th>
+      <th className='thNudeSlim'></th>
       <th className='thNude'><button disabled={unlock.meeksUnlock} className='myButtonSetAllAvail' onClick={setAllAvailMeeks}>Set All Avail<br></br> Meeks</button></th>
       <th className='thNude'><button disabled={unlock.theunsUnlock} className='myButtonSetAllAvail' onClick={setAllAvailTheuns}>Set All Avail <br></br> Theuns</button></th>
       <th className='thNude'><button disabled={unlock.nathanUnlock} className='myButtonSetAllAvail' onClick={setAllAvailNathan}>Set All Avail <br></br> Nathan</button></th>
       <th className='thNude'><button disabled={unlock.troyUnlock} className='myButtonSetAllAvail' onClick={setAllAvailTroy}>Set All Avail <br></br>Troy</button></th> 
     </tr>
     <tr>
-      <th className='thNude'></th>
-      <th className='thNude'></th>
+      <th className='thNudeSlim'></th>
+      <th className='thNudeSlim'></th>
       <th className='thNude'><button disabled={unlock.meeksUnlock} className='myButtonSetAllUnavail' onClick={setAllUnavailMeeks}>Set All Unavail <br></br> Meeks</button></th>
       <th className='thNude'><button disabled={unlock.theunsUnlock} className='myButtonSetAllUnavail' onClick={setAllUnavailTheuns}>Set All Unavail<br></br> Theuns</button></th>
       <th className='thNude'><button disabled={unlock.nathanUnlock} className='myButtonSetAllUnavail' onClick={setAllUnavailNathan}>Set All Unavail <br></br> Nathan</button></th>
@@ -164,64 +164,64 @@ const allAvailable =()=>{
     <table className='tableDefault'>
     <tbody>
     <tr>
-      <th scope="col">Date</th>
-      <th scope="col">Day</th>
+      <th scope="colDate">Date</th>
+      <th scope="colDay">Day</th>
       <th scope="col">Meeks</th>
       <th scope="col">Theuns</th>
       <th scope="col">Nathan</th>
       <th scope="col">Troy</th>
     </tr>
     <tr>
-      <th scope="col">Nov 28</th>
-      <th scope="row">Monday</th>
+      <th scope="colDate">Nov 28</th>
+      <th scope="rowDay">Monday</th>
       <td><button disabled={unlock.meeksUnlock} onClick={()=>setUsers1(prev=>{return {...prev, meeks1: !users1.meeks1}})} className={ users1.meeks1 ? 'avail' : 'unavail'}> { users1.meeks1 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.theunsUnlock} onClick={()=>setUsers1(prev=>{return {...prev, theuns1: !users1.theuns1}})} className={ users1.theuns1 ? 'avail' : 'unavail'}> { users1.theuns1 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.nathanUnlock} onClick={()=>setUsers1(prev=>{return {...prev, nathan1: !users1.nathan1}})} className={ users1.nathan1 ? 'avail' : 'unavail'}> { users1.nathan1 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.troyUnlock} onClick={()=>setUsers1(prev=>{return {...prev, troy1: !users1.troy1}})} className={ users1.troy1 ? 'avail' : 'unavail'}> { users1.troy1 ? 'Available' : 'Unavailable' }</button></td>
     </tr>
     <tr>
-      <th scope="col">Nov 29</th>
-      <th scope="row">Tuesday</th>
+      <th scope="colDate">Nov 29</th>
+      <th scope="rowDay">Tuesday</th>
       <td><button disabled={unlock.meeksUnlock} onClick={()=>setUsers2(prev=>{return {...prev, meeks2: !users2.meeks2}})} className={ users2.meeks2 ? 'avail' : 'unavail'}> { users2.meeks2 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.theunsUnlock} onClick={()=>setUsers2(prev=>{return {...prev, theuns2: !users2.theuns2}})} className={ users2.theuns2 ? 'avail' : 'unavail'}> { users2.theuns2 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.nathanUnlock} onClick={()=>setUsers2(prev=>{return {...prev, nathan2: !users2.nathan2}})} className={ users2.nathan2 ? 'avail' : 'unavail'}> { users2.nathan2 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.troyUnlock} onClick={()=>setUsers2(prev=>{return {...prev, troy2: !users2.troy2}})} className={ users2.troy2 ? 'avail' : 'unavail'}> { users2.troy2 ? 'Available' : 'Unavailable' }</button></td>
     </tr>
     <tr>
-      <th scope="col">Nov 30</th>
-      <th scope="row">Wednesday</th>
+      <th scope="colDate">Nov 30</th>
+      <th scope="rowDay">Wednesday</th>
       <td><button disabled={unlock.meeksUnlock} onClick={()=>setUsers3(prev=>{return {...prev, meeks3: !users3.meeks3}})} className={ users3.meeks3 ? 'avail' : 'unavail'}> { users3.meeks3 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.theunsUnlock} onClick={()=>setUsers3(prev=>{return {...prev, theuns3: !users3.theuns3}})} className={ users3.theuns3 ? 'avail' : 'unavail'}> { users3.theuns3 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.nathanUnlock} onClick={()=>setUsers3(prev=>{return {...prev, nathan3: !users3.nathan3}})} className={ users3.nathan3 ? 'avail' : 'unavail'}> { users3.nathan3 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.troyUnlock} onClick={()=>setUsers3(prev=>{return {...prev, troy3: !users3.troy3}})} className={ users3.troy3 ? 'avail' : 'unavail'}> { users3.troy3 ? 'Available' : 'Unavailable' }</button></td>
     </tr>
     <tr>
-      <th scope="col">Dec 1</th>
-      <th scope="row">Thursday</th>
+      <th scope="colDate">Dec 1</th>
+      <th scope="rowDay">Thursday</th>
       <td><button disabled={unlock.meeksUnlock} onClick={()=>setUsers4(prev=>{return {...prev, meeks4: !users4.meeks4}})} className={ users4.meeks4 ? 'avail' : 'unavail'}> { users4.meeks4 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.theunsUnlock} onClick={()=>setUsers4(prev=>{return {...prev, theuns4: !users4.theuns4}})} className={ users4.theuns4 ? 'avail' : 'unavail'}> { users4.theuns4 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.nathanUnlock} onClick={()=>setUsers4(prev=>{return {...prev, nathan4: !users4.nathan4}})} className={ users4.nathan4 ? 'avail' : 'unavail'}> { users4.nathan4 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.troyUnlock} onClick={()=>setUsers4(prev=>{return {...prev, troy4: !users4.troy4}})} className={ users4.troy4 ? 'avail' : 'unavail'}> { users4.troy4 ? 'Available' : 'Unavailable' }</button></td>
     </tr>
     <tr>
-      <th scope="col">Dec 2</th>
-      <th scope="row">Friday</th>
+      <th scope="colDate">Dec 2</th>
+      <th scope="rowDay">Friday</th>
       <td><button disabled={unlock.meeksUnlock} onClick={()=>setUsers5(prev=>{return {...prev, meeks5: !users5.meeks5}})} className={ users5.meeks5 ? 'avail' : 'unavail'}> { users5.meeks5 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.theunsUnlock} onClick={()=>setUsers5(prev=>{return {...prev, theuns5: !users5.theuns5}})} className={ users5.theuns5 ? 'avail' : 'unavail'}> { users5.theuns5 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.nathanUnlock} onClick={()=>setUsers5(prev=>{return {...prev, nathan5: !users5.nathan5}})} className={ users5.nathan5 ? 'avail' : 'unavail'}> { users5.nathan5 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.troyUnlock} onClick={()=>setUsers5(prev=>{return {...prev, troy5: !users5.troy5}})} className={ users5.troy5 ? 'avail' : 'unavail'}> { users5.troy5 ? 'Available' : 'Unavailable' }</button></td>
     </tr>
     <tr>
-      <th scope="col">Dec 3</th>
-      <th scope="row">Saturday</th>
+      <th scope="colDate">Dec 3</th>
+      <th scope="rowDay">Saturday</th>
       <td><button disabled={unlock.meeksUnlock} onClick={()=>setUsers6(prev=>{return {...prev, meeks6: !users6.meeks6}})} className={ users6.meeks6 ? 'avail' : 'unavail'}> { users6.meeks6 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.theunsUnlock} onClick={()=>setUsers6(prev=>{return {...prev, theuns6: !users6.theuns6}})} className={ users6.theuns6 ? 'avail' : 'unavail'}> { users6.theuns6 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.nathanUnlock} onClick={()=>setUsers6(prev=>{return {...prev, nathan6: !users6.nathan6}})} className={ users6.nathan6 ? 'avail' : 'unavail'}> { users6.nathan6 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.troyUnlock} onClick={()=>setUsers6(prev=>{return {...prev, troy6: !users6.troy6}})} className={ users6.troy6 ? 'avail' : 'unavail'}> { users6.troy6 ? 'Available' : 'Unavailable' }</button></td>
     </tr>
     <tr>
-      <th scope="col">Dec 4</th>
-      <th scope="row">Sunday</th>
+      <th scope="colDate">Dec 4</th>
+      <th scope="rowDay">Sunday</th>
       <td><button disabled={unlock.meeksUnlock} onClick={()=>setUsers7(prev=>{return {...prev, meeks7: !users7.meeks7}})} className={ users7.meeks7 ? 'avail' : 'unavail'}> { users7.meeks7 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.theunsUnlock} onClick={()=>setUsers7(prev=>{return {...prev, theuns7: !users7.theuns7}})} className={ users7.theuns7 ? 'avail' : 'unavail'}> { users7.theuns7 ? 'Available' : 'Unavailable' }</button></td>
       <td><button disabled={unlock.nathanUnlock} onClick={()=>setUsers7(prev=>{return {...prev, nathan7: !users7.nathan7}})} className={ users7.nathan7 ? 'avail' : 'unavail'}> { users7.nathan7 ? 'Available' : 'Unavailable' }</button></td>

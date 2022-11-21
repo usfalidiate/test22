@@ -1,16 +1,16 @@
 th {
     border: 1px solid rgb(190, 190, 190);
     padding: 5px;
-    width: 200px;
-    height: 60px;    
+    width: 150px;
+    height: 80px;    
 }
 
 td {
   text-align: center;
   background-color: gray;
   color: blue;
-  width: 200px;
-  height: 60px;
+  width: 150px;
+  height: 80px;
   border: 1px solid rgb(190, 190, 190);
   padding: 5px;
  }
@@ -19,19 +19,49 @@ td {
   margin: auto;
   border: none;
   padding: 5px;
-  width: 200px;
-  height: 60px;    
+  width: 150px;
+  height: 80px;    
+ }
+
+ .thNudeSlim {
+  margin: auto;
+  border: none;
+  padding: 5px;
+  width: 100px;
+  height: 80px;    
  }
 
 th[scope="col"] {
   background-color: #696969;
   color: rgb(37, 32, 32);
-  width: 200px;
-  height: 60px;
+  width: 150px;
+  height: 80px;
 }
+
+th[scope="colDate"] {
+  background-color: #696969;
+  color: rgb(37, 32, 32);
+  width: 100px;
+  height: 80px;
+}
+
+th[scope="colDay"] {
+  background-color: #696969;
+  color: rgb(37, 32, 32);
+  width: 100px;
+  height: 80px;
+}
+
+
 
 th[scope="row"] {
   background-color: #2d2d30;
+  height: 80px;
+}
+
+th[scope="rowDay"] {
+  background-color: #2d2d30;
+  height: 80px;
 }
 
 caption {
@@ -48,8 +78,8 @@ table {
   font-family: sans-serif;
   font-size: .8rem;
   width: 60%;
-  width: 200px;
-  height: 60px; 
+  width: 150px;
+  height: 80px; 
   background-color: none;
 }
 
@@ -63,8 +93,8 @@ letter-spacing: 1px;
 font-family: sans-serif;
 font-size: .8rem;
 width: 60%;
-width: 200px;
-height: 60px; 
+width: 150px;
+height: 80px; 
 }
 
 .tableDefault {
@@ -77,8 +107,8 @@ letter-spacing: 1px;
 font-family: sans-serif;
 font-size: .8rem;
 width: 60%;
-width: 200px;
-height: 60px; 
+width: 150px;
+height: 80px; 
 }
 
 .emptyButton{
@@ -91,14 +121,15 @@ height: 60px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 100px;
-  height: 60px;
+  width: 145px;
+  height: 75px;
 }
 
 .myButtonUnlocked {
   background: linear-gradient(91.4deg, #2fb8ff 0%, #9eecd9 100%); 
   padding: 12px 12px; 
-  width: 180px; 
+  width: 145px; 
+  height: 75px;
   border: none;
   border-radius: 30px;
   color: white;
@@ -109,7 +140,8 @@ height: 60px;
 .myButtonLocked {
   background: linear-gradient(91.4deg, #b54900 0%, #ff0505 100%); 
   padding: 12px 12px; 
-  width: 180px; 
+  width: 145px; 
+  height: 75px;
   border: none;
   border-radius: 30px;
   color: white;
@@ -118,7 +150,8 @@ height: 60px;
 }
 .myButtonSetAllAvail {
   padding: 12px 12px; 
-  width: 180px; 
+  width: 145px; 
+  height: 75px;  
   border: none;
   border-radius: 5px;
   color: black;
@@ -129,7 +162,8 @@ height: 60px;
 
 .myButtonSetAllUnavail {
   padding: 12px 12px; 
-  width: 180px; 
+  width: 145px; 
+  height: 75px;  
   border: none;
   border-radius: 5px;
   color: black;
@@ -146,16 +180,16 @@ height: 60px;
 .avail {
   color: white;
   background-color:green;
-  width: 180px;
-  height: 50px;
+  width: 140px;
+  height: 70px;
   border: none;
   }
 
 .unavail {
   color: white;
   background-color:red;
-  width: 180px;
-  height: 50px;
+  width: 140px;
+  height: 70px;
   border: none;
 }
 
