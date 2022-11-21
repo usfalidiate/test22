@@ -131,7 +131,7 @@ const allAvailable =()=>{
   return (
     
     <div>
-    <h1>Jam Availabilities</h1>
+    {/* <h1>Jam Availabilities</h1> */}
     <table className='tableNude'>
     <tbody>
     <tr>
@@ -230,10 +230,10 @@ const allAvailable =()=>{
     </tbody>
     </table>
  
-    <h1>Available Dates</h1>
+    {/* <h1>Available Dates</h1>
   
-    <h2> hi </h2>
+    <h2> hi </h2>*/}
     </div>
-      )    
+      )     
       console.log('luigi anus');
 } 
