@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { render } from 'react-dom';
 
+import { db } from '../src/utils/firebase';
+import { onValue, ref } from 'firebase/database';
 
 export default function index() {
    
@@ -14,7 +16,6 @@ export default function index() {
         setUsers5(prev=>{return {...prev, meeks5: true};}) 
         setUsers6(prev=>{return {...prev, meeks6: true};}) 
         setUsers7(prev=>{return {...prev, meeks7: true};}) 
-
       }
       else {}
       }
@@ -67,7 +68,6 @@ export default function index() {
         setUsers5(prev=>{return {...prev, meeks5: false};}) 
         setUsers6(prev=>{return {...prev, meeks6: false};}) 
         setUsers7(prev=>{return {...prev, meeks7: false};}) 
-
         }
         else {}
         }
@@ -121,12 +121,18 @@ const [users7, setUsers7] = useState({meeks7:true,theuns7:false,nathan7:false,tr
 
 const [unlock, setUnlock] = useState({meeksUnlock: true, theunsUnlock: true, nathanUnlock:true, troyUnlock:true})
 
-const allAvailable =()=>{
-  
-}
-   
-      console.log(allAvailable)
+//const allAvailable =()=>{}
+//console.log(allAvailable)
 
+const [meeksData, setMeeksData] = useState({
+  mon: users1.meeks1,
+  tue: users2.meeks2,
+  wed: users3.meeks3,
+  thur: users4.meeks4,
+  fri: users5.meeks5,
+  sat: users6.meeks6,
+  sun: users7.meeks7,
+})
 
   return (
     
